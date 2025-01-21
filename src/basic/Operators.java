@@ -44,6 +44,14 @@ public class Operators {
         System.out.printf("num1 : %d\n", num1++);
         System.out.printf("num1 : %d\n", ++num1);   // pre-fix : 변수의 값을 먼저 증가한 뒤 같은 줄에 있는 명령을 실행
 
+        // 2.대입 연산자 : =, +=, -=, *=, /=, %=
+        num3 += num1;   //num3 = num3 + num1;
+        num3 -= num1;   //num3 = num3 - num1;
+        num3 *= num1;   //num3 = num3 * num1;
+        num3 /= num1;   //num3 = num3 / num1;
+        num3 %= num1;   //num3 = num3 % num1;
+
+
         // 형변환
         short shNum = (short)num1;  // 명시적 형변환, over-flow 가 발생할 수 있고, 그 책임은 개발자에게 있다.
         num1 = shNum;   // 묵시적 형변환
